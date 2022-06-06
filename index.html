@@ -9,7 +9,7 @@
   <meta http-equiv="Access-Control-Allow-Headers" content="X-Requested-With" />
 
   <title>
-    INFO 1201 Example: Wack-a-Suga
+    INFO 1201 Example: Whack-a-Suga
   </title>
 
   <style>
@@ -17,6 +17,7 @@
       box-sizing: border-box;
       font-size: 10px;
       background: cornflowerblue;
+      text-align: center;
     }
 
     *, *:before, *:after {
@@ -68,11 +69,12 @@
       flex: 1 0 33.33%;
       overflow: hidden;
       position: relative;
+      cursor: url('https://mcfriske.github.io/whack-a-suga/hammer.png') 25 50, auto;
     }
 
     .hole:after {
       display: block;
-      background: url('volley-net.png') bottom center no-repeat;
+      background: url('https://mcfriske.github.io/whack-a-suga/volley-net.png') bottom center no-repeat;
       background-size:82%;
       content:'';
       width: 100%;
@@ -91,17 +93,17 @@
     }
 
     .hole.suga-ope .mole {
-      background:url('suga-ope.png') bottom center no-repeat;
+      background:url('https://mcfriske.github.io/whack-a-suga/suga-ope.png') bottom center no-repeat;
       background-size:85%;
     }
 
     .hole.suga-nom .mole {
-      background:url('suga-nom.png') bottom center no-repeat;
+      background:url('https://mcfriske.github.io/whack-a-suga/suga-nom.png') bottom center no-repeat;
       background-size:85%;
     }
 
     .hole.suga-winter .mole {
-      background:url('suga-winter.png') bottom center no-repeat;
+      background:url('https://mcfriske.github.io/whack-a-suga/suga-winter.png') bottom center no-repeat;
       background-size:85%;
     }
 
@@ -119,7 +121,7 @@
   </head>
   <body>
     <h1>Whack-a-Suga! <span class="score">0</span></h1>
-    <p>
+    <p>Get two points if you can whack Sugawara, but lose a point if you whack a volleyball.</p>
     <button onClick="startGame()">Start!</button>
 
     <div class="game">
